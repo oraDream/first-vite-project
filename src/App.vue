@@ -10,7 +10,8 @@ export default {
   name: 'App',
   setup(){
     console.log("setup")
-    const asideVisible = ref(false)
+    const width = document.documentElement.clientWidth
+    const asideVisible = ref(width <= 500 ? false : true)
     provide('xxx',asideVisible)
   },
   computed(){

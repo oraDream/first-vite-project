@@ -6,7 +6,7 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <!-- <span class="toggleAside" @click="toggleMenu"></span> -->
+    <span class="toggleAside" @click="toggleMenu"></span>
   </div>
 </template>
 <script lang="ts">
