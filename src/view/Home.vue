@@ -5,8 +5,8 @@
             <h1>lulu UI</h1>
             <h2>一个UI</h2>
             <p class="actions">
-                <a href="">GitHub</a>
-                <a href="">开始</a>
+                <a href="#">GitHub</a>
+                <router-link to="/doc">开始</router-link>
             </p>
         </div>
     </div>
