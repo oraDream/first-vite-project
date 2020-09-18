@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Topnav />
+  <div class="layout">
+    <Topnav class="nav" />
     <div class="content">
       <aside v-if="asideVisible">
         <h2>组件列表</h2>
@@ -26,16 +26,14 @@
   </div>
 </template>
 <script lang="ts">
-import { inject, Ref } from 'vue';
 import Topnav from "../components/Topnav.vue";
+import { inject, Ref } from "vue";
 export default {
   components: { Topnav },
-  setup(){
-    console.log("-----------------")
-    const asideVisible = inject<Ref<boolean>>('xxx') //get
-    console.log("doc 获取的 asideVisible为："+asideVisible.value)
-    return {asideVisible}
-  }
+  setup() {
+    const asideVisible = inject<Ref<boolean>>("xxx"); // get
+    return { asideVisible };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -51,7 +49,7 @@ export default {
     padding-top: 60px;
     padding-left: 156px;
     @media (max-width: 500px) {
-      padding-left: 0;
+      padding-left: 0; 
     }
   }
 }
